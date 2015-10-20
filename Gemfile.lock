@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/mongoid/mongoid.git
+  revision: 63ece9973709a837a1817824d202b367db3e3688
+  specs:
+    mongoid (5.0.0.beta)
+      activemodel (~> 4.0)
+      mongo (= 2.1.0.beta)
+      origin (~> 2.1)
+      tzinfo (>= 0.3.37)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -39,6 +49,8 @@ GEM
     arel (6.0.3)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bson (3.2.6)
+    bson_ext (1.5.1)
     builder (3.2.2)
     byebug (6.0.2)
     coffee-rails (4.1.0)
@@ -69,9 +81,12 @@ GEM
     mime-types (2.6.2)
     mini_portile (0.6.2)
     minitest (5.8.1)
+    mongo (2.1.0.beta)
+      bson (~> 3.0)
     multi_json (1.11.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    origin (2.1.1)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -138,10 +153,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson_ext
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  mongoid!
   rails (= 4.2.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
